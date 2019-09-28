@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/sun-pattern.png");
+    background-repeat: repeat;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    margin: 0 0 50px 0;
+    background-color: #ffffff;
+    height: 90px;
+    box-shadow: 0 5px 5px #777777;
+    user-select: none;
+}
+
+.wrapper {
+    margin-bottom: 50px;
+    display: block;
+    overflow: auto;
+    height: auto;
+    background-color: #ffffff;
+    border: solid 2px #dddddd;
+    padding: 10px 30px 10px 30px;
+}
+
+h1 {
+    font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 90px;
+    text-align: center;
+    width: max-content;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+    background-color: #1ab3ff;
+}
+
+h2 {
+    font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24pt;
+    padding: 10px 0 0 0;
+    color: #1ab3ff;
+}
+
+#profileImg {
+    margin: 0 20px 20px 0;
+}
+
+.fillSpace {
+    flex: 1;
+    clear: both;
+}
+
+.footer {
+    border-top: 8px solid #1ab3ff;
+    background-color: #666666;
+    text-align: center;
+    padding-top: 20px;
+    color: #cccccc;
+    height: 70px;
+}
+
+.btn-primary {
+    margin-bottom: 10px;
+    background-color: #1ab3ff;
+    border-color: #1ab3ff;   
+}
+
+#navCenter {
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    line-height: 74px;
+}
+
+.nav-item:link, .nav-item:visited {
+    color: #777777;
+    text-decoration: none;
+}
+
+.active:link, .active:visited {
+    color: #333333;
+}
+
+.navEnd {
+    margin-right: -15px;
+}
+
+.divider {
+    padding-top: 7px;
+    color: #cccccc;
+}
+
+@media (min-width: 990px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        width: 100vw;
+    }
+
+    header {
+        height: 140px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    #navCenter {
+        justify-content: center;
+        width: 100vw;
+        line-height: 100%;
+    }
+    #headerMobile {
+        margin: 0;
+        padding: 0; 
+    }
+}

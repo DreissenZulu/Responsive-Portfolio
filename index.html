@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Use !+Enter to get a quick skeleton of an HTML page! -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <!-- Aww yeah Bootstrap strapping my boots -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header containing name and navigation bar -->
+    <header>
+        <!-- Wrap in container to center content. headerMobile removes margin and padding formatting-->
+        <div class="container" id="headerMobile">
+            <div class="row">
+                <div class="col-md-7 justify-content-start">
+                    <h1>Alex (Khoa) Le</h1>
+                </div>
+                <div class="col-md-5">
+                    <!-- navCenter id is responsive to mobile resolutions and centers the navbar -->
+                    <ul class="nav" id="navCenter">
+                        <li class="nav-link">
+                            <a class="nav-item active" href="./index.html">About</a>
+                        </li>
+                        <!-- Divider class is used to align the '|' character with the navbar -->
+                        <p class="divider">|</p>
+                        <li class="nav-link">
+                            <a class="nav-item" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <p class="divider">|</p>
+                        <!-- navEnd is applied to remove padding on this option to make the content flush with the main body -->
+                        <li class="nav-link navEnd">
+                            <a class="nav-item" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Wrapper class uses display:block and overflow:auto to encase the floated image -->
+                <main class="wrapper">
+                    <h2>About Me</h2>
+                    <hr />
+
+                    <img class="justify-content-left align-items-center img-fluid float-left" id="profileImg"
+                        src="./assets/images/P_20190206_123805_BF.jpg" alt="A photo of me" width="300px" />
+
+                    <p>
+                        McMaster University graduate with a Bachelor's of Life Sciences,
+                        and currently attending a coding bootcamp at University of Toronto's
+                        Continuing Education program. Coding has always been one of my
+                        passions, and I just love the freedom to create new things and
+                        tackle challenging problems.
+                    </p>
+                    <p>
+                        In my spare time I tend to play games, watch tutorial videos, or
+                        draw. I've spent a decent amount of time learning basic animation,
+                        3D modeling, video editing.
+                    </p>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!--The div with the fillSpace class is to make the page take up the size of
+        the screen at minimum-->
+    <div class="fillSpace"></div>
+
+    <footer class="footer">
+        Copyright
+    </footer>
+</body>
+
+</html>
