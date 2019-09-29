@@ -1,8 +1,10 @@
+/* Reset formatting */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Apply background and basic fonts */
 body {
     background-image: url("../images/sun-pattern.png");
     background-repeat: repeat;
@@ -11,6 +13,7 @@ body {
     min-height: 100vh;
 }
 
+/* Define white background of header */
 header {
     margin: 0 0 50px 0;
     background-color: #ffffff;
@@ -19,6 +22,7 @@ header {
     user-select: none;
 }
 
+/* Define the main body's background content */
 .wrapper {
     margin-bottom: 50px;
     display: block;
@@ -29,6 +33,7 @@ header {
     padding: 10px 30px 10px 30px;
 }
 
+/* Style for the name box in the header */
 h1 {
     font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 90px;
@@ -39,6 +44,7 @@ h1 {
     background-color: #1ab3ff;
 }
 
+/* Style for the title in the body */
 h2 {
     font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 24pt;
@@ -46,33 +52,36 @@ h2 {
     color: #1ab3ff;
 }
 
+/* Some margins for the profile image in the index */
 #profileImg {
     margin: 0 20px 20px 0;
 }
 
+/* Blue boxes with project names in the portfolio page */
 .overlay {
     position: absolute;
     bottom: 40px;
     height: 50px;
-    width: 200px;
+    max-width: 200px;
     background-color: #1ab3ff;
     color: #ffffff;
     text-align: center;
     line-height: 50px;
 }
 
+/* Class for portfolio images */
 .image {
-    /* display: block; */
     width: 200px;
     margin-bottom: 20px;
 }
 
+/* Class for empty div below main body content. Keeps the footer at the bottom of the page and prevents main wrapper from extending to footer */
 .fillSpace {
     flex: 1;
 }
 
+/* Footer style formatting */
 .footer {
-
     width: 100%;
     border-top: 8px solid #1ab3ff;
     background-color: #666666;
@@ -82,12 +91,14 @@ h2 {
     height: 70px;
 }
 
+/* Some custom colours for the Submit button */
 .btn-primary {
     margin-bottom: 10px;
     background-color: #1ab3ff;
     border-color: #1ab3ff;   
 }
 
+/* Styling for navbar in a large viewport. Keeps the navbar to the right side of the header */
 #navCenter {
     justify-content: end;
     margin: 0;
@@ -95,31 +106,38 @@ h2 {
     line-height: 74px;
 }
 
+/* Styling for navbar item colours by default */
 .nav-item:link, .nav-item:visited {
     color: #777777;
     text-decoration: none;
 }
 
+/* Styling for the active page navbar item */
 .active:link, .active:visited {
     color: #333333;
 }
 
+/* Styling specifically for the last navbar item to have it flush with the wrapper */
 .navEnd {
     margin-right: -15px;
 }
 
+/* Styling for the '|' character in the navbar. Keeps it inline with the menu items */
 .divider {
     padding-top: 7px;
     color: #cccccc;
 }
 
+/* When the minimum width is more than 990px, the main content width is 960px */
 @media (min-width: 990px) {
     .container{
         max-width: 960px;
     }
 }
 
-@media (max-width: 767px) {
+/* When the width is less than 767px, change the header name box to fill the width, increase the header white space height, change the Sumbit button's width,
+center the navigation bar, and remove all margins and padding in the header */
+@media (max-width: 768px) {
     h1 {
         width: 100vw;
     }
@@ -137,6 +155,7 @@ h2 {
         width: 100vw;
         line-height: 100%;
     }
+
     #headerMobile {
         margin: 0;
         padding: 0; 
