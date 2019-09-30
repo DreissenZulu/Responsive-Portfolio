@@ -140,6 +140,7 @@ center the navigation bar, and remove all margins and padding in the header */
 @media (max-width: 768px) {
     h1 {
         width: 100vw;
+        padding: 0;
     }
 
     header {
