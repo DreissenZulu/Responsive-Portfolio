@@ -19,3 +19,7 @@ mode, centering itself on the screen, and in desktop mode it is justified to the
 was to have the navbar column fill 12 spaces when the screen size is small, allowing it to wrap the full width. Then, using media 
 queries again, I had the navbar fill the width of the screen in mobile mode, and in doing so allowed me to justify content to 
 center properly.
+
+I found that I had a major issue with the styling in mobile format. When the screen size got smaller I ended up with empty space beside my 
+header, which only showed up sometimes and in certain browsers. In order to consistently remove the space caused by this, I applied a 
+margin and padding reset to the media query when the screen width got below 768px. This solved the issue of an empty space beside the header
