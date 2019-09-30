@@ -22,6 +22,7 @@ header {
     user-select: none;
 }
 
+
 /* Define the main body's background content */
 .wrapper {
     margin-bottom: 50px;
@@ -131,16 +132,21 @@ h2 {
 /* When the minimum width is more than 990px, the main content width is 960px */
 @media (min-width: 990px) {
     .container{
-        max-width: 960px;
+        max-width: 990px;
     }
 }
 
 /* When the width is less than 767px, change the header name box to fill the width, increase the header white space height, change the Sumbit button's width,
 center the navigation bar, and remove all margins and padding in the header */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     h1 {
         width: 100vw;
+        margin-left: 0;
+    }
+
+    .row, .col-md-7, .col-md-5 {
         padding: 0;
+        margin: 0;
     }
 
     header {
@@ -153,7 +159,6 @@ center the navigation bar, and remove all margins and padding in the header */
 
     #navCenter {
         justify-content: center;
-        width: 100vw;
         line-height: 100%;
     }
 
