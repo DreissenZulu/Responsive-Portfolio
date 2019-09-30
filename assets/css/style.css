@@ -101,7 +101,7 @@ h2 {
 
 /* Styling for navbar in a large viewport. Keeps the navbar to the right side of the header */
 #navCenter {
-    justify-content: end;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     line-height: 74px;
@@ -159,6 +159,7 @@ center the navigation bar, and remove all margins and padding in the header */
 
     #navCenter {
         justify-content: center;
+        width: 100vw;
         line-height: 100%;
     }
 
