@@ -3,7 +3,8 @@ Original portfolio, but with a mobile friendly responsive format
 
 ## Description
 This version of the portfolio is the same as the original, but elements have been adjusted to be responsive, allowing
-for easier browsing in a mobile environment.
+for easier browsing in a mobile environment. The goal was to keep the webpage format as close to the original as possible, 
+while also allowing the page to look clean in a mobile viewport.
 
 ## Challenges
 ### Header
@@ -22,4 +23,11 @@ center properly.
 
 I found that I had a major issue with the styling in mobile format. When the screen size got smaller I ended up with empty space beside my 
 header, which only showed up sometimes and in certain browsers. In order to consistently remove the space caused by this, I applied a 
-margin and padding reset to the media query when the screen width got below 768px. This solved the issue of an empty space beside the header
+margin and padding reset to the media query when the screen width got below 768px. This solved the issue of an empty space beside the header.
+
+### Portfolio Items
+The final challenge was in centering the icons on the portfolio page. The ideal was to show two rows of three icons on a full page, two 
+icon rows on a tablet, and one column in mobile, with all icons spaced evenly. I opted to use a single row and allow the icons to 
+wrap around in individual columns, creating the two row look on desktop. My problem then was to have the icons center themselves in their 
+individual columns. Eventually, it was pointed out that I needed a d-flex class on the column itself to allow justify-content-center to work 
+properly. This allowed me to apply the flex property properly to the columns, achieving the desired look.
