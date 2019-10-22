@@ -5,6 +5,16 @@ function writeToOverlay(object) {
     $("#pfRepo").attr("href", object.hubUrl);
 }
 
+function closeOverlay(event) {
+    if (event.target == event.currentTarget) {
+        $("#overlayPortfolio").addClass("fadeOut");
+        setTimeout(function() {
+            $("#overlayPortfolio").removeClass("fadeOut");
+            $("#overlayPortfolio").addClass("d-none");
+        }, 300);
+    }
+}
+
 $(".nav-item").click(function () {
     $(".nav-item").removeClass("active")
     $(".container.main").addClass("d-none")
@@ -19,13 +29,11 @@ $(".nav-item").click(function () {
 })
 
 $("#overlayPortfolio").click(function () {
-    if (event.target == event.currentTarget) {
-        $("#overlayPortfolio").addClass("fadeOut");
-        setTimeout(function() {
-            $("#overlayPortfolio").removeClass("fadeOut");
-            $("#overlayPortfolio").addClass("d-none");
-        }, 300);
-    }
+    closeOverlay(event);
+})
+
+$(".closeBox").click(function () {
+    closeOverlay(event);
 })
 
 $("button").click(function() {
