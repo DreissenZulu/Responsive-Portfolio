@@ -11,6 +11,7 @@ body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 /* Define white background of header */
@@ -20,6 +21,10 @@ header {
     height: 90px;
     box-shadow: 0 5px 5px #777777;
     user-select: none;
+}
+
+.main {
+    position: relative;
 }
 
 /* Define the main body's background content */
@@ -171,6 +176,20 @@ h2 {
     animation-duration: 0.30s;
 }
 
+.slideOut {
+    animation-name: slide-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 0.30s;
+}
+
+.slideIn {
+    animation-name: slide-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 0.30s;
+}
+
 /* When the minimum width is more than 990px, the main content width is 960px */
 @media (min-width: 990px) {
     .container{
@@ -238,5 +257,34 @@ center the navigation bar, and remove all margins and padding in the header */
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+        left: 0;
+
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        right: 100%
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
     }
 }
