@@ -234,7 +234,7 @@ center the navigation bar, and remove all margins and padding in the header */
         width: auto;
     }
 
-    .closeBox {
+    .faBox, .faFoot {
         width: auto;
     }
 
