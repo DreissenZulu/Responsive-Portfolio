@@ -1,5 +1,8 @@
 function writeToOverlay(object) {
-    $("#pfTitle").text(object.title)
+    $("#pfTitle").text(object.title);
+    $("#pfDesc").text(object.desc);
+    $("#pfGit").attr("href", object.pageUrl);
+    $("#pfRepo").attr("href", object.hubUrl);
 }
 
 $(".nav-item").click(function () {
