@@ -62,6 +62,8 @@ $("button").click(function () {
         writeToOverlay(projectsArr.jsQuiz);
     } else if ($(this).attr("id") == "weathDash") {
         writeToOverlay(projectsArr.weathDash);
+    } else if ($(this).attr("id") == "pokeSim") {
+        writeToOverlay(projectsArr.pokeSim);
     } else {
         return;
     };
