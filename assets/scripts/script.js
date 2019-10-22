@@ -1,3 +1,5 @@
+var lastActive = "about";
+
 function writeToOverlay(object) {
     $("#pfTitle").text(object.title);
     $("#pfDesc").text(object.desc);
@@ -8,7 +10,7 @@ function writeToOverlay(object) {
 function closeOverlay(event) {
     if (event.target == event.currentTarget) {
         $("#overlayPortfolio").addClass("fadeOut");
-        setTimeout(function() {
+        setTimeout(function () {
             $("#overlayPortfolio").removeClass("fadeOut");
             $("#overlayPortfolio").addClass("d-none");
         }, 300);
@@ -16,16 +18,30 @@ function closeOverlay(event) {
 }
 
 $(".nav-item").click(function () {
-    $(".nav-item").removeClass("active")
-    $(".container.main").addClass("d-none")
-    $(this).addClass("active");
-    if (this.id == "about") {
-        $("#profileDiv").removeClass("d-none");
-    } else if (this.id == "portfolio") {
-        $("#portfolioDiv").removeClass("d-none");
-    } else if (this.id == "contact") {
-        $("#contactDiv").removeClass("d-none");
+    let selectedItem = this.id;
+    if (selectedItem == lastActive) {
+        return;
     }
+
+    $(".container.main").removeClass("slideIn").addClass("slideOut");
+
+    setTimeout(function () {
+        $(".container.main").addClass("d-none");
+        if (selectedItem == "about") {
+            $("#profileDiv").removeClass("d-none").addClass("slideIn");
+            lastActive = "about"
+        } else if (selectedItem == "portfolio") {
+            $("#portfolioDiv").removeClass("d-none").addClass("slideIn");
+            lastActive = "portfolio"
+        } else if (selectedItem == "contact") {
+            $("#contactDiv").removeClass("d-none").addClass("slideIn");
+            lastActive = "contact"
+        }
+    }, 300)
+
+
+    $(".nav-item").removeClass("active")
+    $(this).addClass("active");
 })
 
 $("#overlayPortfolio").click(function () {
@@ -36,7 +52,7 @@ $(".closeBox").click(function () {
     closeOverlay(event);
 })
 
-$("button").click(function() {
+$("button").click(function () {
     if (event.target.type == "submit") {
         return;
     }
@@ -51,8 +67,8 @@ $("button").click(function() {
     };
     $("#overlayPortfolio").removeClass("d-none");
     $("#overlayPortfolio").addClass("fadeIn");
-    setTimeout(function() {
+    setTimeout(function () {
         $("#overlayPortfolio").removeClass("fadeIn");
     }, 300);
-    
+
 })
