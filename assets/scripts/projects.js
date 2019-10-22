@@ -1,13 +1,13 @@
 var projectsArr = {
     pwGen: {
         title: "Password Generator",
-        desc: "Generates a password based on user-defined parameters. Users can copy the generated password to their clipboard",
+        desc: "Generates a password based on user-defined parameters. The user can choose to limit the password to any combination of lower case characters, upper case characters, numbers, and symbols, and set the length between 8 and 128 characters. Users can copy the generated password to their clipboard",
         pageUrl: "https://dreissenzulu.github.io/Password-Gen/",
         hubUrl: "https://github.com/DreissenZulu/Password-Gen"
     },
     jsQuiz: {
         title: "JS Quiz Game",
-        desc: "A multiple choice quiz game about (mostly) JavaScript. Includes a locally saved scoreboard saved to localStorage",
+        desc: "A multiple choice quiz game about (mostly) JavaScript. The application is designed to operate on a single page, except for the high scores page. Divs are dynamically hidden and shown using animation classes, and score is calculated based on time remaining and correct answers. Includes a scoreboard saved to localStorage",
         pageUrl: "https://dreissenzulu.github.io/JS-Quiz-Game/",
         hubUrl: "https://github.com/DreissenZulu/JS-Quiz-Game"
     },
