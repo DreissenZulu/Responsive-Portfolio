@@ -1,5 +1,6 @@
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 Original portfolio, but with a mobile friendly responsive format
+Update 2: Incorporated JavaScript to the design for more interactivity.
 
 ## Description
 This version of the portfolio is the same as the original, but elements have been adjusted to be responsive, allowing
@@ -31,3 +32,8 @@ icon rows on a tablet, and one column in mobile, with all icons spaced evenly. I
 wrap around in individual columns, creating the two row look on desktop. My problem then was to have the icons center themselves in their 
 individual columns. Eventually, it was pointed out that I needed a d-flex class on the column itself to allow justify-content-center to work 
 properly. This allowed me to apply the flex property properly to the columns, achieving the desired look.
+
+### JavaScript
+The second update to the portfolio added JavaScript to the original design. By using JavaScript I was able to convert the page to a single page format, 
+switching visible divs dynamically. The portfolio items now show descriptions of the projects and link to the repo and GitHub Pages they're hosted on. 
+I was also able to attach animations to several items on the page.
