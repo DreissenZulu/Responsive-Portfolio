@@ -1,3 +1,7 @@
+function writeToOverlay(object) {
+    $("#pfTitle").text(object.title)
+}
+
 $(".nav-item").click(function () {
     $(".nav-item").removeClass("active")
     $(".container.main").addClass("d-none")
@@ -25,6 +29,15 @@ $("button").click(function() {
     if (event.target.type == "submit") {
         return;
     }
+    if ($(this).attr("id") == "pwGen") {
+        writeToOverlay(projectsArr.pwGen);
+    } else if ($(this).attr("id") == "jsQuiz") {
+        writeToOverlay(projectsArr.jsQuiz);
+    } else if ($(this).attr("id") == "weathDash") {
+        writeToOverlay(projectsArr.weathDash);
+    } else {
+        return;
+    };
     $("#overlayPortfolio").removeClass("d-none");
     $("#overlayPortfolio").addClass("fadeIn");
     setTimeout(function() {
