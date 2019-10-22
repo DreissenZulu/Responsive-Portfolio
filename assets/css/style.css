@@ -33,6 +33,25 @@ header {
     padding: 10px 30px 10px 30px;
 }
 
+.jumbotron {
+    padding: 2rem 2rem;
+}
+
+.closeBox {
+    height: 48px;
+    width: 40px;
+    padding: 0;
+    color: #777777;
+}
+
+.closeBox:focus {
+    box-shadow: none;
+}
+
+.port-btn:focus {
+    box-shadow: none;
+}
+
 /* Style for the name box in the header */
 h1 {
     font-family: 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -181,6 +200,10 @@ center the navigation bar, and remove all margins and padding in the header */
     }
 
     .port-btn {
+        width: auto;
+    }
+
+    .closeBox {
         width: auto;
     }
 
