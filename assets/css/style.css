@@ -42,15 +42,27 @@ header {
     padding: 2rem 2rem;
 }
 
-.closeBox {
+.faBox {
     height: 48px;
     width: 40px;
     padding: 0;
     color: #777777;
 }
 
-.closeBox:focus {
+.faBox:focus {
     box-shadow: none;
+}
+
+.faFoot {
+    height: 48px;
+    width: 40px;
+    padding: 0;
+    color: #dddddd;
+}
+
+.faFoot:focus, .faFoot:hover {
+    box-shadow: none;
+    color: #ffffff;
 }
 
 .port-btn:focus {
@@ -113,7 +125,7 @@ h2 {
     text-align: center;
     padding-top: 20px;
     color: #cccccc;
-    height: 70px;
+    height: 92px;
 }
 
 /* Some custom colours for the Submit button */
