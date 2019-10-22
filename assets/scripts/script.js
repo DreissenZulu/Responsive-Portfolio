@@ -48,7 +48,7 @@ $("#overlayPortfolio").click(function () {
     closeOverlay(event);
 })
 
-$(".closeBox").click(function () {
+$("#closeBox").click(function () {
     closeOverlay(event);
 })
 
