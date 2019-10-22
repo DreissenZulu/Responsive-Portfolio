@@ -13,10 +13,22 @@ $(".nav-item").click(function () {
 
 $("#overlayPortfolio").click(function () {
     if (event.target == event.currentTarget) {
-        $("#overlayPortfolio").addClass("d-none")
+        $("#overlayPortfolio").addClass("fadeOut");
+        setTimeout(function() {
+            $("#overlayPortfolio").removeClass("fadeOut");
+            $("#overlayPortfolio").addClass("d-none");
+        }, 300);
     }
 })
 
 $("button").click(function() {
-    $("#overlayPortfolio").removeClass("d-none")
+    if (event.target.type == "submit") {
+        return;
+    }
+    $("#overlayPortfolio").removeClass("d-none");
+    $("#overlayPortfolio").addClass("fadeIn");
+    setTimeout(function() {
+        $("#overlayPortfolio").removeClass("fadeIn");
+    }, 300);
+    
 })
