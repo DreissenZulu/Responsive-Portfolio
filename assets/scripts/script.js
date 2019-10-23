@@ -56,17 +56,9 @@ $("button").click(function () {
     if (event.target.type == "submit") {
         return;
     }
-    if ($(this).attr("id") == "pwGen") {
-        writeToOverlay(projectsArr.pwGen);
-    } else if ($(this).attr("id") == "jsQuiz") {
-        writeToOverlay(projectsArr.jsQuiz);
-    } else if ($(this).attr("id") == "weathDash") {
-        writeToOverlay(projectsArr.weathDash);
-    } else if ($(this).attr("id") == "pokeSim") {
-        writeToOverlay(projectsArr.pokeSim);
-    } else {
-        return;
-    };
+    let projectName = $(this).attr("id");
+    writeToOverlay(projectsArr[projectName]);
+    
     $("#overlayPortfolio").removeClass("d-none");
     $("#overlayPortfolio").addClass("fadeIn");
     setTimeout(function () {
