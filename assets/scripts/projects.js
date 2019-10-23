@@ -21,6 +21,6 @@ var projectsArr = {
         title: "Pokemon Battle Sim",
         desc: "A project developed in a team of 4. Utilizes the server-side PokeAPI to develop a simple Pokemon battle simulator. Both teams have a team of six generated from the National Pokedex and battle until one side runs out of usable Pokemon. All information, including stats, sprites, and names, are pulled directly from the API when the page opens. Primary role: Lead Javascript programmer.",
         pageUrl: "https://bcbutcher.github.io/teamcapb/",
-        hubUrl: "https://bcbutcher.github.io/teamcapb/"
+        hubUrl: "https://github.com/BCButcher/teamcapb"
     }
 }
