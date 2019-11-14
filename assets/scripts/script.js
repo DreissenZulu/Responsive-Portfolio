@@ -44,7 +44,7 @@ $(".nav-item").click(function () {
     $(this).addClass("active");
 })
 
-$("#overlayPortfolio").click(function () {
+$("#overlayPortfolio").click(() => {
     closeOverlay(event);
 })
 
@@ -58,10 +58,10 @@ $("button").click(function () {
     }
     let projectName = $(this).attr("id");
     writeToOverlay(projectsArr[projectName]);
-    
+
     $("#overlayPortfolio").removeClass("d-none");
     $("#overlayPortfolio").addClass("fadeIn");
-    setTimeout(function () {
+    setTimeout(() => {
         $("#overlayPortfolio").removeClass("fadeIn");
     }, 300);
 

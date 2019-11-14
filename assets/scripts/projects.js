@@ -22,5 +22,11 @@ var projectsArr = {
         desc: "A project developed in a team of 4. Utilizes the server-side PokeAPI to develop a simple Pokemon battle simulator. Both teams have a team of six generated from the National Pokedex and battle until one side runs out of usable Pokemon. All information, including stats, sprites, and names, are pulled directly from the API when the page opens. Primary role: Lead Javascript programmer.",
         pageUrl: "https://bcbutcher.github.io/teamcapb/",
         hubUrl: "https://github.com/BCButcher/teamcapb"
+    },
+    "burger" {
+        title: "Heroku Burger",
+        desc: "An application hosted on Heroku using JavaScript, NodeJS, SQL, and Handlebars. Users can input names of burgers to the app, which will be prepared and ready to eat in one column (a new entry is added to the database). When devoured, it is moved to the burger graveyard (the entry is modified in the database).",
+        pageUrl: "https://arcane-plains-99959.herokuapp.com/",
+        hubUrl: "https://github.com/DreissenZulu/burger"
     }
 }
