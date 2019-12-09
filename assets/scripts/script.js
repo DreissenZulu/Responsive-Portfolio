@@ -3,7 +3,12 @@ var lastActive = "about";
 function writeToOverlay(object) {
     $("#pfTitle").text(object.title);
     $("#pfDesc").text(object.desc);
-    $("#pfGit").attr("href", object.pageUrl);
+    if (object.type == "heroku") {
+        $("#pfHost").text("Heroku Page")
+    } else if (object.type == "github") {
+        $("#pfHost").text("GitHub Pages")
+    }
+    $("#pfHost").attr("href", object.pageUrl);
     $("#pfRepo").attr("href", object.hubUrl);
 }
 
