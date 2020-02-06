@@ -176,7 +176,7 @@ h2 {
 
 #overlayCard {
     max-height: 95vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .fadeOut {
